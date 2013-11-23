@@ -1,0 +1,45 @@
+{
+	"teamTypes" : {
+		"AGE" : "Age Group",
+		"HS" : "High School",
+		"COL" : "College",
+		"MAS" : "Masters",
+		"OTH" : "Other",
+		"REC" : "Recreation"
+	},
+	"teamRegistration" : {
+		"AUST" : "Australia",
+		"BCSS" : "Canada",
+		"NZSF" : "New Zealand",
+		"OTH" : "Other",
+		"SSA" : "South Africa",
+		"UK" : "United Kingdom",
+		"USS" : "United States"//USA Swimming
+	},
+	"strokes" : {
+		"A" : "Freestyle",
+		"B" : "Backstroke",
+		"C" : "Breaststroke",
+		"D" : "Butterfly",
+		"E" : "Medley"
+	},
+	//extract to program:
+	"ageCodes" : {
+		"0" : "Under",
+		"109" : "Over",
+		"both" : "Open/Senior"
+	},
+
+	"courses" : {
+		"L" : "Long Course Meters",
+		"S" : "Short Course Meters",
+		"Y" : "Short Course Yards"
+	},
+
+	"timeCodes" : {
+		"Q" : "Disqualified",
+		"R" : "No Show",
+		"S" : "Scratch",
+		"F" : "False Start"
+	}
+}

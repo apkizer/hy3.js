@@ -1,0 +1,280 @@
+{
+   "3A":{
+      "description":"10 Alternating Kick",
+      "stroke":"Breast"
+   },
+   "3B":{
+      "description":"10 Downward Butterfly Kick",
+      "stroke":"Breast"
+   },
+   "3C":{
+      "description":"10 Scissors Kick",
+      "stroke":"Breast"
+   },
+   "3D":{
+      "description":"11 Non-simultaneous Arms",
+      "stroke":"Breast"
+   },
+   "3E":{
+      "description":"11 Two Strokes Underwater",
+      "stroke":"Breast"
+   },
+   "3F":{
+      "description":"11 Arms not in Same Horizontal Plane",
+      "stroke":"Breast"
+   },
+   "3G":{
+      "description":"11 Hands Beyond the Hipline During Stroke",
+      "stroke":"Breast"
+   },
+   "3H":{
+      "description":"12 Elbows Recovered over the Water",
+      "stroke":"Breast"
+   },
+   "3I":{
+      "description":"14 Head not up during Cycle of Pull and Kick",
+      "stroke":"Breast"
+   },
+   "3J":{
+      "description":"14 Double Pulls or Kicks",
+      "stroke":"Breast"
+   },
+   "3K":{
+      "description":"15 One Hand Touch",
+      "stroke":"Breast"
+   },
+   "3L":{
+      "description":"15 Non-simultaneous Touch",
+      "stroke":"Breast"
+   },
+   "3M":{
+      "description":"16 Shoulders not at or Past Vertical Towards Breast off the Wall",
+      "stroke":"Breast"
+   },
+   "3N":{
+      "description":"19 Multiple Butterfly Kicks on Pull Out",
+      "stroke":"Breast"
+   },
+   "3O":{
+      "description":"19 Non-simultaneous Kick",
+      "stroke":"Breast"
+   },
+   "3P":{
+      "description":"19 Fly Kick Prior to Pull",
+      "stroke":"Breast"
+   },
+   "3Q":{
+      "description":"19 Legs not in the Same Horizontal Plane",
+      "stroke":"Breast"
+   },
+   "3R":{
+      "description":"19 Feet not Pointed Outward during Propulsive Part of Kick",
+      "stroke":"Breast"
+   },
+   "3S":{
+      "description":"19 Hands not Separated at Touch"
+   },
+   "1A":{
+      "description":"20 Alternating Kick",
+      "stroke":"Fly"
+   },
+   "1B":{
+      "description":"20 Breaststroke Kick",
+      "stroke":"Fly"
+   },
+   "1C":{
+      "description":"20 Scissors Kick",
+      "stroke":"Fly"
+   },
+   "1D":{
+      "description":"21 Non-simultaneous Arms",
+      "stroke":"Fly"
+   },
+   "1E":{
+      "description":"21 Underwater Recovery",
+      "stroke":"Fly"
+   },
+   "1F":{
+      "description":"23 One Hand Touch",
+      "stroke":"Fly"
+   },
+   "1G":{
+      "description":"23 Non-simultaneous Touch",
+      "stroke":"Fly"
+   },
+   "1H":{
+      "description":"24 Shoulders not at or Past Vertical Towards Breast off the Wall",
+      "stroke":"Fly"
+   },
+   "1I":{
+      "description":"25 Head did not Break the Surface by 15 Meters",
+      "stroke":"Fly"
+   },
+   "1J":{
+      "description":"29 Compeletely Submerged during the Swim",
+      "stroke":"Fly"
+   },
+   "1K":{
+      "description":"29 Compeletely Submerged prior to Turn or Finish",
+      "stroke":"Fly"
+   },
+   "1S":{
+      "description":"29 Hands not Separated at Touch"
+   },
+   "2A":{
+      "description":"30 Toes Curled over Gutter after the Start",
+      "stroke":"Back"
+   },
+   "2B":{
+      "description":"31 Head did not Break the Surface by 15 Meters",
+      "stroke":"Back"
+   },
+   "2C":{
+      "description":"32 Shoulders not at or Past Vertical Towards Back off the Wall",
+      "stroke":"Back"
+   },
+   "2D":{
+      "description":"33 No Touch at Turn",
+      "stroke":"Back"
+   },
+   "2E":{
+      "description":"34 Delay Initiating Arm Pull",
+      "stroke":"Back"
+   },
+   "2F":{
+      "description":"34 Delay Initiating Turn",
+      "stroke":"Back"
+   },
+   "2G":{
+      "description":"34 Multiple Strokes",
+      "stroke":"Back"
+   },
+   "2H":{
+      "description":"35 Shoulders Past Vertical Toward Breast during Swim",
+      "stroke":"Back"
+   },
+   "2I":{
+      "description":"36 Shoulders Past Vertical at Finish",
+      "stroke":"Back"
+   },
+   "2J":{
+      "description":"39 Compeletely Submerged during the Swim",
+      "stroke":"Back"
+   },
+   "2K":{
+      "description":"39 Compeletely Submerged prior to Turn or Finish",
+      "stroke":"Back"
+   },
+   "5P":{
+      "description":"42 Strokes out of Sequence",
+      "stroke":"IM"
+   },
+   "4K":{
+      "description":"50 No Touch on Turn",
+      "stroke":"Free"
+   },
+   "4N":{
+      "description":"51 Head did not Break the Surface by 15 Meters",
+      "stroke":"Free"
+   },
+   "4M":{
+      "description":"52 Compeletely Submerged during the Swim",
+      "stroke":"Free"
+   },
+   "4O":{
+      "description":"52 Compeletely Submerged prior to Turn or Finish",
+      "stroke":"Free"
+   },
+   "7A":{
+      "description":"60 False Start",
+      "stroke":"Misc"
+   },
+   "7B":{
+      "description":"61 Delay of Meet",
+      "stroke":"Misc"
+   },
+   "7C":{
+      "description":"62 Did not Finish",
+      "stroke":"Misc"
+   },
+   "7D":{
+      "description":"63 Declared False Start",
+      "stroke":"Misc"
+   },
+   "7E":{
+      "description":"69 Entered Water without Permission",
+      "stroke":"Misc"
+   },
+   "7F":{
+      "description":"69 Interfered with Another Swimmer",
+      "stroke":"Misc"
+   },
+   "7G":{
+      "description":"69 Walking on or Springing from Bottom",
+      "stroke":"Misc"
+   },
+   "7H":{
+      "description":"69 Standing on Bottom",
+      "stroke":"Misc"
+   },
+   "7I":{
+      "description":"69 Pulling on Lane Line",
+      "stroke":"Misc"
+   },
+   "7J":{
+      "description":"69 Finished in Wrong Lane",
+      "stroke":"Misc"
+   },
+   "7K":{
+      "description":"69 Unsportsmanlike Conduct",
+      "stroke":"Misc"
+   },
+   "7L":{
+      "description":"69 No Show Prelim Event",
+      "stroke":"Misc"
+   },
+   "7M":{
+      "description":"69 No Show Final Event",
+      "stroke":"Misc"
+   },
+   "61":{
+      "description":"70 Stroke Infraction swimmer #1",
+      "stroke":"Relay"
+   },
+   "62":{
+      "description":"70 Stroke Infraction swimmer #2",
+      "stroke":"Relay"
+   },
+   "63":{
+      "description":"70 Stroke Infraction swimmer #3",
+      "stroke":"Relay"
+   },
+   "64":{
+      "description":"70 Stroke Infraction swimmer #4",
+      "stroke":"Relay"
+   },
+   "66":{
+      "description":"71 Early take-off swimmer #2",
+      "stroke":"Relay"
+   },
+   "67":{
+      "description":"71 Early take-off swimmer #3",
+      "stroke":"Relay"
+   },
+   "68":{
+      "description":"71 Early take-off swimmer #4",
+      "stroke":"Relay"
+   },
+   "6P":{
+      "description":"72 Changed Order of Swimmers",
+      "stroke":"Relay"
+   },
+   "6Q":{
+      "description":"79 Not Enough Swimmers",
+      "stroke":"Relay"
+   },
+   "6R":{
+      "description":"79 Inelligible Swimmer(s)",
+      "stroke":"Relay"
+   }
+}
