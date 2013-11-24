@@ -5,14 +5,14 @@ var tags = JSON.parse(fs.readFileSync('tags.json').toString());
 var includeAlias = true;
 
 function newline(buffer) {
-    return buffer[131] == 0x0a ? 1 : 0;
+    return buffer[131] == 0x0a ? 2 : 1;
 }
 
-function parse(file) {
+function parseSync(file) {
     var o = new Array(),
         buf = fs.readFileSync(file),
         str = buf.toString('ascii');
-        line = 131 + newline(buf);//determine if file uses 0D or 0D0A newline character, only one is interpretted by node when converted to string from buffer
+        line = 130 + newline(buf);//determine if file uses 0D or 0D0A newline character, only one is interpretted by node when converted to string from buffer
         lines = str.length / line;
     console.log('( ' + str.length + ' / ' + line + ') = ' + lines);
     for (var i = 0; i < lines; i++) {
@@ -24,6 +24,25 @@ function parse(file) {
     }
     console.log(o.length);
     return o;
+}
+
+function parse(file, callback){
+    fs.readFile(file, function(err, buf){
+        if(err)
+            return callback(err, null);
+        var str = buf.toString('ascii'),
+            line = 130 + newline(buf),
+            lines = str.length / line,
+            o = new Array();
+        for (var i = 0; i < lines; i++) {
+            var start = i * line;
+            var l = parseLine(str.slice(start, start + line), tags);
+            o[i] = l;
+            console.log(l);
+            console.log('###');
+        }
+        callback(null, o);
+    });
 }
 
 function parseLine(str, tags) {
@@ -53,4 +72,5 @@ function parseLine(str, tags) {
     return o;
 }
 
+exports.parseSync = parseSync;
 exports.parse = parse;
