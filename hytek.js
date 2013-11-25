@@ -1,32 +1,34 @@
 var fs = require('fs'),
     utils = require('./hytekutils.js');
 
-var tags = JSON.parse(fs.readFileSync('tags.json').toString());
-var includeAlias = true;
-
-function newline(buffer) {
-    return buffer[131] == 0x0a ? 2 : 1;
+var Hytek = function() {
+    console.log('!');
+    this.includeAlias = true;
+    this.tags = JSON.parse(fs.readFileSync('tags.json').toString());
 }
 
-function parseSync(file) {
-    var o = new Array(),
+function newline(buffer) {
+    return buffer[131] === 0x0a ? 2 : 1;
+}
+
+Hytek.prototype.parseSync = function(file) {
+    var o = [],
         buf = fs.readFileSync(file),
-        str = buf.toString('ascii');
-        line = 130 + newline(buf);//determine if file uses 0D or 0D0A newline character, only one is interpretted by node when converted to string from buffer
+        str = buf.toString('ascii'),
+        line = 130 + newline(buf),//determine if file uses 0D or 0D0A newline character, only one is interpretted by node when converted to string from buffer
         lines = str.length / line;
     console.log('( ' + str.length + ' / ' + line + ') = ' + lines);
-    for (var i = 0; i < lines; i++) {
+    for (i = 0; i < lines; i++) {
         var start = i * line;
-        var l = parseLine(str.slice(start, start + line), tags);
+        var l = this.parseLine(str.slice(start, start + line), this.tags);
         o[i] = l;
         console.log(l);
         console.log('###');
     }
-    console.log(o.length);
     return o;
 }
 
-function parse(file, callback){
+Hytek.prototype.parse = function(file, callback){
     fs.readFile(file, function(err, buf){
         if(err)
             return callback(err, null);
@@ -34,9 +36,9 @@ function parse(file, callback){
             line = 130 + newline(buf),
             lines = str.length / line,
             o = new Array();
-        for (var i = 0; i < lines; i++) {
+        for (i = 0; i < lines; i++) {
             var start = i * line;
-            var l = parseLine(str.slice(start, start + line), tags);
+            var l = this.parseLine(str.slice(start, start + line), tags);
             o[i] = l;
             console.log(l);
             console.log('###');
@@ -45,7 +47,7 @@ function parse(file, callback){
     });
 }
 
-function parseLine(str, tags) {
+Hytek.prototype.parseLine = function (str, tags) {
     str = str.slice(0, 130);
     var id = str.slice(0, 2).toString('ascii');
     var tag = tags[id];
@@ -54,7 +56,7 @@ function parseLine(str, tags) {
     var o = {};
     o.tagId = id;
     for (var intervalProperty in tag) {
-        if (!tag.hasOwnProperty(intervalProperty) || (intervalProperty.toString() == 'alias' && includeAlias == false))
+        if (!tag.hasOwnProperty(intervalProperty) || (intervalProperty.toString() == 'alias' && this.includeAlias == false))
             continue;
         if (intervalProperty.toString() == 'alias') {
             o[intervalProperty] = tag[intervalProperty];
@@ -72,5 +74,26 @@ function parseLine(str, tags) {
     return o;
 }
 
-exports.parseSync = parseSync;
-exports.parse = parse;
+function matchTag(jsonArray, tag) {
+    for(var o in jsonArray) {
+        if(o.tagId === tag)
+            return o;
+    }
+}
+
+function format(jsonArray, format){
+    var o = {};
+    for(var p in format) {
+        var spec = format[p];
+        for (var t in spec) {
+            var tag = spec[t];
+            var matchedTag = matchTag[jsonArray, tag];
+            //o[p] = 
+
+        }
+    }
+}
+
+module.exports = new Hytek();
+//exports.parseSync = parseSync;
+//exports.parse = parse;
