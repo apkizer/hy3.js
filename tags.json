@@ -18,6 +18,7 @@
 
 		"meetType" : [96, 97], 
 		"courseCode" : [98, 98],
+		"swimmerSurcharge" : [100, 106],
 		"courseCode2" : [106, 106]
 	},
 	"B3" : {
