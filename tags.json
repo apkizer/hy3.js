@@ -101,7 +101,8 @@
 		"conversionSeedTime2" : [60, 67],
 		"conversionSeedCourse2" : [68, 68],
 		"seedTime2" : [69, 75],
-		"seedCourse2" : [76, 76]
+		"seedCourse2" : [76, 76],
+		"swimOff": [95, 95]
 	},
 	"E2" : {
 		"alias" : "Individual Event Results",
